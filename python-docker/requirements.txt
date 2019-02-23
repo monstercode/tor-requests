@@ -1,0 +1,9 @@
+requests
+crypto
+cryptography
+click
+beautifulsoup4
+Pillow
+regex
+pysocks
+grequests

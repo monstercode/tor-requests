@@ -1,0 +1,15 @@
+version: '3'
+services:
+  python: 
+    build: ./python-docker
+    volumes:
+      - "./src:/code"
+    links:
+      - tor
+    tty: true
+
+  tor:
+    image: osminogin/tor-simple
+    ports: 
+      - "9050:9051"
+      - "9150:9150"
